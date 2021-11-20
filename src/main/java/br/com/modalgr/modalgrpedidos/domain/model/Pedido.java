@@ -58,6 +58,9 @@ public class Pedido {
 	@JsonProperty(access = Access.READ_ONLY)
 	private OffsetDateTime dataCancelamento;
 	
+	@JsonProperty(access = Access.READ_ONLY)
+	private OffsetDateTime ultimaAlteracao;
+	
 	@OneToMany(mappedBy = "pedido")
 	private List<ItemPedido> itensPedido = new ArrayList<ItemPedido>();
 }

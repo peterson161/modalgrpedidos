@@ -63,6 +63,9 @@ public class ItemPedido {
 	@JsonProperty(access = Access.READ_ONLY)
 	private OffsetDateTime dataCadastro;
 	
+	@JsonProperty(access = Access.READ_ONLY)
+	private OffsetDateTime ultimaAlteracao;
+	
 	public void setValorTotal() {
 		this.valorTotal = this.valorUnitario.multiply(BigDecimal.valueOf(this.quantidade));
 	}

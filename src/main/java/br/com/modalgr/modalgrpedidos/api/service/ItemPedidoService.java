@@ -65,6 +65,7 @@ public class ItemPedidoService {
 		itemPedido.setPedido(pedido);
 		itemPedido.setReferencia(referencia);
 		itemPedido.setDataCadastro(dataCadastro);
+		itemPedido.setUltimaAlteracao(OffsetDateTime.now());
 		itemPedido.setValorTotal();
 
 		return itemPedido;

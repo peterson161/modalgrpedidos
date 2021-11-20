@@ -37,4 +37,7 @@ public class Modelo {
 	
 	@JsonProperty(access = Access.READ_ONLY)
 	private OffsetDateTime dataCadastro;
+	
+	@JsonProperty(access = Access.READ_ONLY)
+	private OffsetDateTime ultimaAlteracao;
 }

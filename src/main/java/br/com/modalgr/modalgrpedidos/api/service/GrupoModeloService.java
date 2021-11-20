@@ -36,6 +36,7 @@ public class GrupoModeloService {
 				.orElseThrow(() -> new EntidadeNaoEncontradaException("Grupo de modelo id " + grupoModeloId + " não localizado."));
 		grupoModelo.setId(grupoModeloInterno.getId());
 		grupoModelo.setDataCadastro(grupoModeloInterno.getDataCadastro());
+		grupoModelo.setUltimaAlteracao(OffsetDateTime.now());
 		return grupoModeloRepository.save(grupoModelo);
 	}
 	

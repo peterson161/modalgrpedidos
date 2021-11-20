@@ -85,6 +85,7 @@ public class PedidoService {
 		pedido.setCliente(cliente);
 		pedido.setStatusPedido(StatusPedido.ATIVO);
 		pedido.setDataCadastro(dataCadastro);
+		pedido.setUltimaAlteracao(OffsetDateTime.now());
 		
 		return pedido;
 	}

@@ -41,6 +41,7 @@ public class ModeloService {
 		Modelo mod = setGenero(modelo);
 		mod.setId(modeloInterno.getId());
 		mod.setDataCadastro(modeloInterno.getDataCadastro());
+		mod.setUltimaAlteracao(OffsetDateTime.now());
 		return modeloRepository.save(mod);
 	}
 	

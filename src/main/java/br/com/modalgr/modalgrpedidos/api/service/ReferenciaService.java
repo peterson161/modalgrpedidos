@@ -70,6 +70,7 @@ public class ReferenciaService {
 		referencia.setGrupoModelo(grupoModelo);
 		referencia.setModelo(modelo);
 		referencia.setDataCadastro(dataCadastro);
+		referencia.setUltimaAlteracao(OffsetDateTime.now());
 		
 		return referencia;
 	}

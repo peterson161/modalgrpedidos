@@ -50,6 +50,7 @@ public class ClienteService {
 			Cliente clienteInterno = clienteRepository.findById(clienteId).get();
 			cliente.setId(clienteInterno.getId());
 			cliente.setDataCadastro(clienteInterno.getDataCadastro());
+			cliente.setUltimaAlteracao(OffsetDateTime.now());
 		}
 		return clienteRepository.save(cliente);
 	}
