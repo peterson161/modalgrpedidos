@@ -29,4 +29,5 @@ public class PedidoListModel {
 	
 	private OffsetDateTime dataCancelamento;
 	private OffsetDateTime dataFinalizacao;
+	private OffsetDateTime ultimaAlteracao;
 }

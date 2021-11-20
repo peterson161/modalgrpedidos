@@ -1,5 +1,7 @@
 package br.com.modalgr.modalgrpedidos.api.model;
 
+import java.time.OffsetDateTime;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,4 +17,5 @@ public class ReferenciaModel {
 	private String nomeGrupo;
 	private String nomeModelo;
 	private String descricao;
+	private OffsetDateTime ultimaAlteracao;
 }

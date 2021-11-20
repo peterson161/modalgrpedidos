@@ -2,6 +2,7 @@ package br.com.modalgr.modalgrpedidos.api.model;
 
 import java.math.BigDecimal;
 import java.sql.Date;
+import java.time.OffsetDateTime;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -22,4 +23,5 @@ public class ItemPedidoAllModel {
 	private int quantidade;
 	private BigDecimal valorUnitario;
 	private BigDecimal valorTotal;
+	private OffsetDateTime ultimaAlteracao;
 }

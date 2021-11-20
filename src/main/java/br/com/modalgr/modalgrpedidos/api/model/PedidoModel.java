@@ -31,5 +31,6 @@ public class PedidoModel {
 	
 	private OffsetDateTime dataCancelamento;
 	private OffsetDateTime dataFinalizacao;
+	private OffsetDateTime ultimaAlteracao;
 	private List<ItemPedidoSoloModel> itens = new ArrayList<>();
 }

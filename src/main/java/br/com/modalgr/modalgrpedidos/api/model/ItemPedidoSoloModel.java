@@ -24,4 +24,5 @@ public class ItemPedidoSoloModel {
 	private BigDecimal valorUnitario;
 	private BigDecimal valorTotal;
 	private OffsetDateTime dataCadastro;
+	private OffsetDateTime ultimaAlteracao;
 }

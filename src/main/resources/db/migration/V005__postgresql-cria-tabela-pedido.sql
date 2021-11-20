@@ -7,8 +7,8 @@ create table pedido(
     status_pedido int not null,
     data_cadastro timestamp with time zone not null,
 	ultima_alteracao timestamp with time zone not null,
-    data_finalizacao timestamp with time zone not null,
-    data_cancelamento timestamp with time zone not null,
+    data_finalizacao timestamp with time zone,
+    data_cancelamento timestamp with time zone,
     
     primary key(id)
 );
