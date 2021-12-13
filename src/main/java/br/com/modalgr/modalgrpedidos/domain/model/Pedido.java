@@ -23,9 +23,9 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
-@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Setter
 @Getter
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
 public class Pedido {
 	
