@@ -15,6 +15,9 @@
 	<description>Sistema de exemplo para a ModalGr</description>
 	<properties>
 		<java.version>11</java.version>
+		<oauth2-oidc-sdk.version>9.20</oauth2-oidc-sdk.version>
+		<modelmapper.version>2.4.4</modelmapper.version>
+		<junit.version>4.12</junit.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -58,7 +61,7 @@
 		<dependency>
 			<groupId>org.modelmapper</groupId>
 			<artifactId>modelmapper</artifactId>
-			<version>2.4.4</version>
+			<version>${modelmapper.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.rest-assured</groupId>
@@ -73,9 +76,18 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+		</dependency>
+		<dependency>
+		  <groupId>com.nimbusds</groupId>
+		  <artifactId>oauth2-oidc-sdk</artifactId>
+		  <version>${oauth2-oidc-sdk.version}</version>
+		</dependency>		
 	</dependencies>
 
 	<build>

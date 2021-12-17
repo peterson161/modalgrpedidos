@@ -1,4 +1,4 @@
-package br.com.modalgr.modalgrpedidos.core;
+package br.com.modalgr.modalgrpedidos.core.modelmapper;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
