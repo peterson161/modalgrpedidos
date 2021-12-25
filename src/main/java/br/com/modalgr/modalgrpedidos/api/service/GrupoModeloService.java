@@ -32,8 +32,7 @@ public class GrupoModeloService {
 	}
 
 	public GrupoModelo alterar(GrupoModelo grupoModelo, Long grupoModeloId) {
-		GrupoModelo grupoModeloInterno = grupoModeloRepository.findById(grupoModeloId)
-				.orElseThrow(() -> new EntidadeNaoEncontradaException("Grupo de modelo id " + grupoModeloId + " não localizado."));
+		GrupoModelo grupoModeloInterno = pesquisar(grupoModeloId);
 		grupoModelo.setId(grupoModeloInterno.getId());
 		grupoModelo.setDataCadastro(grupoModeloInterno.getDataCadastro());
 		grupoModelo.setUltimaAlteracao(OffsetDateTime.now());
@@ -41,9 +40,7 @@ public class GrupoModeloService {
 	}
 	
 	public void apagar(Long grupoModeloId) {
-		if(!grupoModeloRepository.existsById(grupoModeloId)) {
-			throw new EntidadeNaoEncontradaException("Grupo de modelo id " + grupoModeloId + " não localizado.");
-		}
+		pesquisar(grupoModeloId);
 		grupoModeloRepository.deleteById(grupoModeloId);
 	}
 }
