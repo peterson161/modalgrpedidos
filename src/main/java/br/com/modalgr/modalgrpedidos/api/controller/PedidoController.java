@@ -52,6 +52,7 @@ public class PedidoController {
 	}
 	
 	@PostMapping
+	@ResponseStatus(HttpStatus.CREATED)
 	public Pedido adicionar(@Valid @RequestBody Pedido pedido) {
 		return pedidoService.adicionar(pedido);
 	}

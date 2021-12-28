@@ -42,6 +42,7 @@ public class ModeloController {
 	}
 	
 	@PostMapping
+	@ResponseStatus(HttpStatus.CREATED)
 	public Modelo adicionar(@Valid @RequestBody Modelo modelo) {
 		return modeloService.adicionar(modelo);
 	}
